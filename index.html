@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>LookMumFlyingCan</title>
+        <meta charset="utf-8"/> 
+        <!-- jQuery -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+        <!-- Formantic UI -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
+        <!-- Particles -->
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+    <body class="pushable">  
+        <!-- Page Contents -->
+        <div id="particles-js"></div>
+        <div class="ui inverted vertical masthead center aligned segment">  
+            <object class="cansat" data="https://lookmumflyingcan.com/StyleGuide/logo/cansat.svg"></object>
+            <div class="ui text container">
+                <h1 class="ui inverted header">
+                    LookMumFlyingCan
+                </h1>
+                <h2>ESERO-Poland CanSat 2021 Competition Team</h2>
+                <div class="buttons">
+                    <button class="ui huge primary labeled icon button" onclick="window.location.href='https://www.facebook.com/lookmumflyingcan'">
+                        <i class="facebook f icon"></i>
+                        Blog
+                    </button>
+                    <button class="ui huge labeled icon button" onclick="window.location.href='https://github.com/LookMumFlyingCan'">
+                        <i class="github icon"></i>
+                        GitHub
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            particlesJS.load('particles-js', 'https://lookmumflyingcan.com/particlesjs-config.json', function() {
+                console.log('callback - particles.js config loaded');
+            });
+        </script>
+    </body>
+</html>

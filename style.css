@@ -1,0 +1,77 @@
+html {
+    user-select: none;
+}
+
+.masthead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.masthead > * {
+    flex-grow: 1;
+}
+
+.masthead > .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.masthead > .text, object {
+    z-index: 2;
+}
+
+.masthead > .text > h1 h2 {
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.masthead > .text > .buttons {
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.masthead.segment {
+    padding: 5em 0em;
+    background-color: transparent !important;
+}
+
+.masthead h1.ui.header {
+    font-size: 4em;
+    font-weight: normal;
+}
+
+.masthead h2 {
+    padding-bottom: 1em;
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+.footer.segment {
+    padding: 5em 0em;
+}
+
+.masthead > .cansat {
+    height: 50%;
+    max-height: 50%;
+    max-width: 100%;
+    padding: 5em 0;
+    animation: spaaace 3s infinite ease-in-out alternate;
+}
+
+@keyframes spaaace {
+    0% { transform: translateY(0); }
+    0% { transform: translateY(-20px); }
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #001028;
+}

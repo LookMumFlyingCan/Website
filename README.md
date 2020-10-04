@@ -1,1 +1,3 @@
-# Website
+# LookMumFlyingCan Website
+
+Nowodworek CanSat Team
