@@ -54,8 +54,16 @@ html {
     padding: 5em 0em;
 }
 
-.masthead > .cansat {
+.masthead > .breadholder {
     height: 50%;
+    max-height: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 100%;
+}
+
+.masthead > .cansat {
+    padding-top: 10%;
     max-height: 50%;
     max-width: 100%;
     padding: 5em 0;
@@ -63,8 +71,8 @@ html {
 }
 
 @keyframes spaaace {
-    0% { transform: translateY(0); }
-    0% { transform: translateY(-20px); }
+    0% { transform: translateY(5%); }
+    0% { transform: translateY(13%); }
 }
 
 #particles-js {
