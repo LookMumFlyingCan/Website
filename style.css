@@ -45,7 +45,8 @@ html {
 }
 
 .masthead h2 {
-    padding-bottom: 1em;
+    margin-top: 0.4rem;
+    padding-bottom: 0.1em;
     font-size: 1.7em;
     font-weight: normal;
 }
