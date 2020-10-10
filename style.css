@@ -71,8 +71,14 @@ html {
 }
 
 @keyframes spaaace {
-    0% { transform: translateY(5%); }
-    0% { transform: translateY(13%); }
+    from {
+      -webkit-transform: translateY(5%); 
+      transform: translateY(5%); 
+    }
+    to {
+      -webkit-transform: translateY(13%); 
+      transform: translateY(13%); 
+    }
 }
 
 #particles-js {
