@@ -27,6 +27,7 @@ body{
 
 .cansat{
   height: 35vh;
+  animation: spaaace 3s infinite ease-in-out alternate;
   opacity: 1;
 }
 
