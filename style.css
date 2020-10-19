@@ -1,92 +1,134 @@
-html {
-    user-select: none;
+body{
+  background-color: #001028;
+  color: #fff;
+}
+
+.muted{
+  color: #6979ad;
+}
+
+.header{
+  font-size: 3.7em;
+}
+
+.scroller{
+  position: absolute;
+  top: 96vh;
+  right: 49%;
+  font-size: 1.7em;
+  animation: bumpyfull 1s infinite cubic-bezier(1, 0, 0, 1) alternate;
+  z-index: 2;
+}
+
+.scroller:hover{
+  animation: bumpy 1s infinite cubic-bezier(1, 0, 0, 1) alternate;
+  cursor: pointer;
+}
+
+.cansat{
+  height: 35vh;
+  opacity: 1;
 }
 
 .masthead {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }
 
-.masthead > * {
-    flex-grow: 1;
+.center-block {
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+.text-center {
+  text-align:center
 }
 
-.masthead > .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+.bulletpoint{
+  font-size: 9em;
 }
 
-.masthead > .text, object {
-    z-index: 2;
+.ar{
+  font-family: 'Aref Ruqaa';
 }
 
-.masthead > .text > h1 h2 {
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+.avatar{
+  width: 75%;
+  padding-bottom: 1vh;
+  margin-top: 5vh;
 }
 
-.masthead > .text > .buttons {
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+.desc{
+  margin-bottom: 2vh;
 }
 
-.masthead.segment {
-    padding: 5em 0em;
-    background-color: transparent !important;
+.sponsor{
+  margin-top: 4vh;
+  width: 100%;
+  max-height: 7vh;
 }
 
-.masthead h1.ui.header {
-    font-size: 4em;
-    font-weight: normal;
+.name{
+  margin-bottom: 0;
 }
 
-.masthead h2 {
-    margin-top: 0.4rem;
-    padding-bottom: 0.1em;
-    font-size: 1.7em;
-    font-weight: normal;
+.alt{
+  background-color: #051533 !important;
 }
 
-.footer.segment {
-    padding: 5em 0em;
+.footer{
+  background-color: #0a0a0a;
 }
 
-.masthead > .breadholder {
-    height: 50%;
-    max-height: 50%;
-    margin-left: 10%;
-    margin-right: 10%;
-    max-width: 100%;
+.beat{
+  margin-left: 0.1%;
+  margin-right: 0.1%;
+  color: red;
+  animation: heartbleed 1s infinite cubic-bezier(0.86, 0, 0.07, 1) alternate;
 }
 
-.masthead > .cansat {
-    padding-top: 10%;
-    max-height: 50%;
-    max-width: 100%;
-    padding: 5em 0;
-    animation: spaaace 3s infinite ease-in-out alternate;
+a{
+  color: #404005 !important;
+}
+a:active{
+  color: #905010 !important;
+}
+a:link{
+  color: #905010 !important;
+}
+a:hover{
+  color: #905010 !important;
+}
+
+@keyframes bumpyfull{
+  from{
+    top: 95vh;
+    opacity: 0.4;
+  }
+  to{
+    top: 96vh;
+    opacity: 0.8;
+  }
+}
+
+@keyframes heartbleed{
+  from{
+    scale: 0.9;
+  }
+  to{
+    scale: 0.6;
+  }
 }
 
 @keyframes spaaace {
-    from {
-      -webkit-transform: translateY(5%); 
-      transform: translateY(5%); 
-    }
-    to {
-      -webkit-transform: translateY(13%); 
-      transform: translateY(13%); 
-    }
-}
-
-#particles-js {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background-color: #001028;
+  from {
+    -webkit-transform: translateY(30%); 
+    transform: translateY(30%); 
+  }
+  to {
+    -webkit-transform: translateY(45%); 
+    transform: translateY(45%); 
+  }
 }
