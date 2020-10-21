@@ -68,18 +68,23 @@ body {
 }
 
 .scroller {
-  background-color: transparent;
   position: absolute;
-  top: 96vh;
-  right: 49%;
-  font-size: 1.7em;
+  width: 40%;
+  margin: 0 30%;
+  top: 95vh;
   animation: bumpyfull 1s infinite cubic-bezier(1, 0, 0, 1) alternate;
   z-index: 2;
+  text-align: center;
+  cursor: pointer;
+}
+
+.scroller > span {
+  background-color: transparent;
+  font-size: 2em;
 }
 
 .scroller:hover {
   animation: bumpy 1s infinite cubic-bezier(1, 0, 0, 1) alternate;
-  cursor: pointer;
 }
 
 .cansat {
@@ -141,12 +146,12 @@ body {
 
 @keyframes bumpyfull {
   from {
-    top: 95vh;
+    top: 94vh;
     opacity: 0.4;
   }
 
   to {
-    top: 96vh;
+    top: 95vh;
     opacity: 0.8;
   }
 }
