@@ -123,6 +123,7 @@ body {
 .sponsor {
   margin-top: 2vh;
   width: 45%;
+  cursor: pointer;
 }
 
 .name {
