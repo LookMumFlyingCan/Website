@@ -126,6 +126,12 @@ body {
   cursor: pointer;
 }
 
+.botland {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 .name {
   margin-bottom: 0;
 }
