@@ -2037,7 +2037,7 @@
       {
         "type": "Feature",
         "properties": {
-          "stroke": null
+          "stroke": "#ffee00"
         },
         "geometry": {
           "type": "LineString",

@@ -35,7 +35,8 @@
                 container: 'map', // container ID
                 style: 'mapbox://styles/firebite/cklqh1dqs78nc17o8ziqh5cjj', // style URL
                 center: [19.910788536071777, 50.059590899426915], // starting position [lng, lat]
-                zoom: 15 // starting zoom
+                zoom: 15, // starting zoom
+                minZoom: 15
             });
             map.on('load', function () {
                 map.addSource('geojson', {
