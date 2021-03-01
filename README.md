@@ -1,3 +1,5 @@
-# LookMumFlyingCan Webpage Repo
+# 🛰️ LookMumFlyingCan Website Repository
 
-Some documents referenced in the DR are in the /static folder
+`Main website`: lookmumflyingcan.com
+
+`Receiver test website`: https://lookmumflyingcan.com/static/rssi.html
