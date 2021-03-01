@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LookMumFlyingCan Receiver Test</title>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+        <link href='./rssi.css' rel='stylesheet' />
+    </head>
+    <body>
+        <div id="map"></div>
+
+         <div class="logo-container">
+            <img class="image" src="/assets/cansat.png" width="45px"/>
+            <a class="text">LookMumFlyingCan Receiver Test</a>
+        </div>
+
+
+        <div id="state-legend" class="legend">
+            <h4>RSSI</h4>
+            <div><span style="background-color: #ff8000"></span>-108</div>
+            <div><span style="background-color: #ffbb00"></span>-107</div>
+            <div><span style="background-color: #ffee00"></span>-103</div>
+            <div><span style="background-color: #99ff00"></span>-99</div>
+            <div><span style="background-color: #00ff04"></span>-95</div>
+            <div><span style="background-color: #00e1ff"></span>-91</div>
+            <div><span style="background-color: #0091ff"></span>-87</div>
+            <div><span style="background-color: #0008ff"></span>-84</div>
+        </div>
+
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiZmlyZWJpdGUiLCJhIjoiY2tsamU3ZWJ5MDczZTJxcDV2b2xwNDA1ciJ9.qLGhpgroGtPyBo35rvVb0w';
+            var map = new mapboxgl.Map({
+                container: 'map', // container ID
+                style: 'mapbox://styles/firebite/cklqh1dqs78nc17o8ziqh5cjj', // style URL
+                center: [19.910788536071777, 50.059590899426915], // starting position [lng, lat]
+                zoom: 15, // starting zoom
+                minZoom: 15
+            });
+            map.on('load', function () {
+                map.addSource('geojson', {
+                type: 'geojson',
+                data: './geo.json'
+                });
+                map.addLayer({
+                    'id': 'geojson',
+                    'type': 'line',
+                    'source': 'geojson',
+                    'paint': {
+                        'line-width': 4,
+                        'line-color': ['get', 'stroke']
+                    }
+                }, "water-point-label");
+            });
+        </script>
+    </body>
+</html>
